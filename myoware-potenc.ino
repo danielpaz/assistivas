@@ -17,7 +17,7 @@ void loop() {
   Serial.println(currentVoltage);       // prints voltage to monitor
   if(currentVoltage >= voltageThreshold){
      // trigger actions
-     Serial.println("CONTRACTION!");  // prints string + new line
+     Serial.println("OK!");  // prints string + new line
      digitalWrite(onboardLED, HIGH); //this sends 5V, turning on LED
      Keyboard.write(KEY_F12);
      //Keyboard.write('c');
